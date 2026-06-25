@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.5">
-<title>Gail的引路卡包</title>
+<title>Gail的思维训练卡包</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700;900&display=swap" rel="stylesheet">
@@ -192,7 +192,7 @@ body{font-family:var(--sans);background:var(--bg);color:var(--text);min-height:1
 <div id="chuan-cards"></div>
 </div>
 
-<div class="page-footer">Gail的引路卡包 · 花树设计</div>
+<div class="page-footer">Gail的思维训练卡包 · 花树设计</div>
 </div>
 
 <div class="modal-overlay" id="randomModal"><div class="modal-card" id="randomContent"></div></div>
@@ -535,5 +535,4 @@ function resetSkill(skill) {
 document.querySelectorAll('.modal-overlay').forEach(m => {
   m.addEventListener('click', e => { if(e.target===m) m.classList.remove('show'); });
 });
-['hsp','munger','naval','chuan'].forEach(s=>renderCards(s));
-renderThr
+['hsp','munger','naval','chuan'].forEach(s=>renderCards(s)
