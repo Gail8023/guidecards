@@ -323,7 +323,7 @@ function renderCards(skill) {
     const groupCards = d.cards.filter(c=>g.cards.includes(c.n));
     const learnedCount = groupCards.filter(c=>learned[c.n]).length;
     html += `<div class="chapter open" id="${skill}-ch-${gi}">`;
-    html += `<div class="chapter-header" onclick="toggleChapter('${skill}',{gi})">`;
+    html += `<div class="chapter-header" onclick="toggleChapter('${skill}',${gi})">`;
     html += `<div class="chapter-name">${g.name}</div>`;
     html += `<div class="chapter-count">${learnedCount} / ${groupCards.length}</div>`;
     html += `<div class="chapter-arrow">▶</div></div>`;
@@ -535,4 +535,8 @@ function resetSkill(skill) {
 document.querySelectorAll('.modal-overlay').forEach(m => {
   m.addEventListener('click', e => { if(e.target===m) m.classList.remove('show'); });
 });
-['hsp','munger','naval','chuan'].forEach(s=>renderCards(s)
+['hsp','munger','naval','chuan'].forEach(s=>renderCards(s));
+renderThree();
+</script>
+</body>
+</
